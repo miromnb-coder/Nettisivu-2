@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>NordClean | Puhtaampi koti, huolettomampi arki</title>
+  <meta name="description" content="NordClean on moderni siivouspalvelu koteihin ja yrityksille. Tutustu palveluihin, hintoihin ja pyydä tarjous." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="NordClean etusivulle">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img" focusable="false">
+            <path d="M9 34 32 14l23 20" />
+            <path d="M17 32v20h30V32" />
+            <path d="M23 52V39l9-7 9 7v13" />
+            <path d="M50 13v7M46.5 16.5h7" />
+          </svg>
+        </span>
+        <span>NordClean</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Päävalikko">
+        <a class="active" href="#top">Etusivu</a>
+        <a href="#palvelut">Palvelut</a>
+        <a href="#hinnat">Hinnat</a>
+        <a href="#yrityksille">Yrityksille</a>
+        <a href="#yhteys">Yhteys</a>
+      </nav>
+
+      <button class="header-cta js-open-quote" type="button">Pyydä tarjous</button>
+
+      <button class="nav-toggle" type="button" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobiilivalikko">
+      <a href="#top">Etusivu</a>
+      <a href="#palvelut">Palvelut</a>
+      <a href="#hinnat">Hinnat</a>
+      <a href="#yrityksille">Yrityksille</a>
+      <a href="#yhteys">Yhteys</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <h1 id="hero-title">Puhtaampi koti, huolettomampi arki</h1>
+        <p>
+          Ammattitaitoista ja luotettavaa siivouspalvelua koteihin tai yrityksille.
+          Me huolehdimme puhtaudesta, jotta sinä voit keskittyä olennaiseen.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#palvelut">Tutustu palveluihin</a>
+          <button class="btn btn-secondary js-open-quote" type="button">Pyydä tarjous</button>
+        </div>
+      </div>
+      <div class="hero-photo" role="img" aria-label="Siivooja työskentelee valoisassa modernissa kodissa"></div>
+    </section>
+
+    <section class="services page-shell" id="palvelut" aria-labelledby="services-title">
+      <div class="section-heading reveal">
+        <h2 id="services-title">Suosituimmat palvelut</h2>
+      </div>
+      <div class="service-grid" id="serviceGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="about page-shell" id="yrityksille" aria-labelledby="about-title">
+      <div class="about-image reveal" role="img" aria-label="Pohjoinen järvimaisema">
+        <div class="quality-badge">
+          <span class="mini-icon" aria-hidden="true">✦</span>
+          <strong>Pohjoista laatua,<br />johon voit luottaa.</strong>
+        </div>
+      </div>
+
+      <div class="about-copy reveal">
+        <h2 id="about-title">Huolellista siivousta pohjoisella tarkkuudella</h2>
+        <p>
+          NordClean on suomalainen siivouspalvelu, joka yhdistää korkean laadun,
+          luotettavuuden ja ympäristöystävällisyyden. Koulutettu henkilökuntamme
+          ja selkeät toimintatapamme takaavat ensiluokkaisen lopputuloksen – joka kerta.
+        </p>
+        <button class="inline-link js-open-about" type="button">Lue lisää meistä <span aria-hidden="true">→</span></button>
+      </div>
+
+      <div class="benefits reveal">
+        <article>
+          <span class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20 4c-8 .5-13 4.5-15 12 6 .5 12-1 15-12Z"/><path d="M4 20c3-5 7-8 12-10"/></svg>
+          </span>
+          <h3>Ympäristöystävälliset tuotteet</h3>
+          <p>Käytämme tehokkaita ja turvallisia tuotteita.</p>
+        </article>
+        <article>
+          <span class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3 20 6v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6l8-3Z"/><path d="m8.8 12.2 2.1 2.1 4.5-5"/></svg>
+          </span>
+          <h3>Luotettavaa palvelua</h3>
+          <p>Voit luottaa siihen, että sovittu pitää.</p>
+        </article>
+        <article>
+          <span class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M16 12a3 3 0 1 0 0-6"/><path d="M2.5 21a5.5 5.5 0 0 1 11 0"/><path d="M14.5 18.5A4.5 4.5 0 0 1 21.5 21"/></svg>
+          </span>
+          <h3>Kokenut ja koulutettu tiimi</h3>
+          <p>Ammattilaiset, joille laatu on kunnia-asia.</p>
+        </article>
+        <article>
+          <span class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3 14 7l4.4.6-3.2 3.1.8 4.3-4-2.1-4 2.1.8-4.3-3.2-3.1L10 7l2-4Z"/><path d="M8 15v6l4-2 4 2v-6"/></svg>
+          </span>
+          <h3>100 % tyytyväisyystakuu</h3>
+          <p>Tavoitteemme on, että sinä olet tyytyväinen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing page-shell" id="hinnat" aria-labelledby="pricing-title">
+      <div class="section-heading reveal">
+        <h2 id="pricing-title">Selkeät hinnat</h2>
+        <p>Esimerkkihinnat auttavat arvioimaan palvelun laajuutta. Lopullinen tarjous tehdään aina tarpeen mukaan.</p>
+      </div>
+      <div class="pricing-grid reveal">
+        <article>
+          <h3>Kotisiivous</h3>
+          <p>Säännöllinen ylläpitosiivous kotiin.</p>
+          <strong>alk. 39 €/h</strong>
+          <button class="btn btn-secondary js-open-quote" type="button">Pyydä tarjous</button>
+        </article>
+        <article class="featured-price">
+          <h3>Muuttosiivous</h3>
+          <p>Huolellinen loppusiivous ennen luovutusta.</p>
+          <strong>alk. 249 €</strong>
+          <button class="btn btn-primary js-open-quote" type="button">Pyydä tarjous</button>
+        </article>
+        <article>
+          <h3>Toimistosiivous</h3>
+          <p>Yritysten säännölliset siivoussopimukset.</p>
+          <strong>tarjouksen mukaan</strong>
+          <button class="btn btn-secondary js-open-quote" type="button">Pyydä tarjous</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="reviews page-shell" aria-labelledby="reviews-title">
+      <div class="section-heading reveal">
+        <h2 id="reviews-title">Asiakkaamme sanovat</h2>
+      </div>
+      <div class="review-carousel" id="reviewCarousel" aria-live="polite"></div>
+      <div class="review-dots" id="reviewDots" aria-label="Arvostelujen sivutus"></div>
+    </section>
+
+    <section class="contact-strip page-shell" id="yhteys" aria-label="Yhteystiedot ja aukioloajat">
+      <div class="contact-item reveal">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"/><path d="M12 12.2a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4Z"/></svg>
+        </span>
+        <div><h3>Sijainti</h3><p>Valimotie 21,<br />00380 Helsinki</p></div>
+      </div>
+      <div class="contact-item reveal">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M7.4 4.8 9.6 7c.6.6.7 1.5.2 2.2l-1 1.4a12.4 12.4 0 0 0 4.6 4.6l1.4-1c.7-.5 1.6-.4 2.2.2l2.2 2.2c.6.6.6 1.7 0 2.3-.8.8-2 1.3-3.2 1.1-6.1-.8-11-5.7-11.8-11.8-.2-1.2.3-2.4 1.1-3.2.7-.8 1.7-.8 2.1-.2Z"/></svg>
+        </span>
+        <div><h3>Puhelin</h3><p><a href="tel:+358101234567">010 123 4567</a></p></div>
+      </div>
+      <div class="contact-item reveal">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4.5 6.5h15v11h-15v-11Z"/><path d="m5 7 7 6 7-6"/></svg>
+        </span>
+        <div><h3>Sähköposti</h3><p><a href="mailto:info@nordclean.fi">info@nordclean.fi</a></p></div>
+      </div>
+      <div class="contact-item reveal">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="M12 7.5V12l3 2"/></svg>
+        </span>
+        <div><h3>Aukioloajat</h3><p>Ma–Pe 8.00–17.00</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer page-shell">
+    <div class="footer-brand">
+      <a class="brand footer-logo" href="#top" aria-label="NordClean etusivulle">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img" focusable="false">
+            <path d="M9 34 32 14l23 20" />
+            <path d="M17 32v20h30V32" />
+            <path d="M23 52V39l9-7 9 7v13" />
+            <path d="M50 13v7M46.5 16.5h7" />
+          </svg>
+        </span>
+        <span>NordClean</span>
+      </a>
+      <p>Ammattitaitoista siivouspalvelua koteihin ja yrityksille Helsingissä ja lähialueilla.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Pikavalikot</h3>
+      <a href="#top">Etusivu</a>
+      <a href="#palvelut">Palvelut</a>
+      <a href="#hinnat">Hinnat</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>Yrityksille</h3>
+      <a href="#palvelut">Toimistosiivous</a>
+      <a href="#yrityksille">Yhteistyö</a>
+      <button class="footer-button js-open-faq" type="button">Usein kysytyt kysymykset</button>
+    </div>
+
+    <div class="footer-links">
+      <h3>Yritys</h3>
+      <button class="footer-button js-open-about" type="button">Meistä</button>
+      <a href="#yhteys">Yhteystiedot</a>
+      <button class="footer-button js-open-policy" type="button">Evästekäytäntö</button>
+    </div>
+
+    <div class="newsletter">
+      <h3>Tilaa uutiskirje</h3>
+      <p>Vinkkejä, tarjouksia ja siivousvinkkejä suoraan sähköpostiisi.</p>
+      <form id="newsletterForm">
+        <label class="sr-only" for="newsletterEmail">Sähköpostiosoite</label>
+        <input id="newsletterEmail" name="email" type="email" placeholder="Sähköpostiosoite" required />
+        <button type="submit">Tilaa</button>
+      </form>
+      <p class="newsletter-status" id="newsletterStatus" aria-live="polite"></p>
+    </div>
+
+    <p class="copyright">© <span id="year"></span> NordClean Oy. Kaikki oikeudet pidätetään.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
